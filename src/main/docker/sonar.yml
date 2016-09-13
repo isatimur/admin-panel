@@ -1,0 +1,8 @@
+version: '2'
+services:
+    adminpanel-sonar:
+        container_name: adminpanel-sonar
+        image: sonarqube:5.6-alpine
+        ports:
+            - 9000:9000
+            - 9092:9092

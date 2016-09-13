@@ -1,0 +1,12 @@
+version: '2'
+services:
+    adminpanel-postgresql:
+        container_name: adminpanel-postgresql
+        image: postgres:9.5.3
+        # volumes:
+        #     - ~/volumes/jhipster/adminPanel/postgresql/:/var/lib/postgresql/
+        environment:
+            - POSTGRES_USER=adminPanel
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432
